@@ -1,0 +1,11 @@
+version: '2'
+services:
+  amanstaffui-postgresql:
+    image: postgres:12.1
+    # volumes:
+    #     - ~/volumes/jhipster/amanStaffUI/postgresql/:/var/lib/postgresql/data/
+    environment:
+      - POSTGRES_USER=amanStaffUI
+      - POSTGRES_PASSWORD=
+    ports:
+      - 5432:5432
